@@ -57,6 +57,7 @@ DATABASE_URL=sqlite:///./test.db
 
 Or for PostgreSQL:
 DATABASE_URL=postgresql://<username>:<password>@localhost:5432/<database>
+(Replace <username>, <password>, and <database> with your actual PostgreSQL values.)
 
 5. Apply Migrations-
 alembic upgrade head
@@ -64,7 +65,7 @@ alembic upgrade head
 6. Run the App-
 uvicorn app.main:app --reload
 
-Visit:
+Then Visit:
 Swagger Docs: http://127.0.0.1:8000/docs
 Redoc: http://127.0.0.1:8000/redoc
 
