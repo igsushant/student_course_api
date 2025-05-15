@@ -51,6 +51,16 @@ For development/testing:
 pip install -r requirements-dev.txt
 
 4. Configure Database-
+### 🔧 PostgreSQL Setup (Optional)
+
+If using PostgreSQL instead of SQLite, you can create your database and user manually via `psql`:
+
+```sql
+-- Access psql as postgres or an admin user
+CREATE DATABASE database;
+CREATE USER username WITH PASSWORD 'your_password';
+GRANT ALL PRIVILEGES ON DATABASE database TO username;
+```
 
 Create a .env file in the root directory:
 DATABASE_URL=sqlite:///./test.db
